@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Khan Marketing Service</title>
+</head>
+<body>
+    <header>
+       
+        <h1 class="kms">Khan Marketing Service</h1>
+        <nav>
+            <ul>
+                <li><a class="glow" href="#about">About Us</a></li>
+                <li><a class="glow" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="slide-in">
+            <h1>K</h1>
+            <h1>M</h1>
+            <h1>S</h1>
+        </div>
+    </header>
+    <div class="container" id="about">
+        
+        <h2>About Us</h2>
+        <p>
+            Are you looking to make a lasting impression on your potential customers and promote your business effectively? Look no further than Khan Marketing Service, your trusted partner in the world of advertising and signage solutions.
+            At Khan Marketing Service, we specialize in creating eye-catching and impactful marketing materials that help businesses stand out from the competition. With years of experience and a passion for design, we are dedicated to delivering high-quality promotional materials that leave a lasting impression on your target audience.
+            Khan Marketing Service specializes in creating and installing banners for local shops and holdings. We take pride in delivering high-quality promotional materials to help businesses stand out.
+        </p>
+    </div>
+    <section id="portfolio" class="portfolio">
+        <div class="animation-element" id="animate-me">
+        <h2>Our Work</h2>
+
+        <div class="portfolio-container">
+           
+            <div class="portfolio-item">
+                <h1>HINDUSTAN UNILEVER</h1>
+                <img src="KW.jpeg" alt="Work 2" class="rounded-img">
+                <p>Products like Kwality Walls and other items of HUL Hindustan Unilever, a global leader in fast-moving consumer goods, approached us with a vision to enhance their market presence in Odisha.
+                     Understanding the significance of strategic banner placement, we meticulously positioned these banners in high-traffic and prominent locations throughout Odisha. 
+                    </p>
+            </div>
+            <div class="portfolio-item">
+                <h1>SAMSUNG</h1>
+                <img src="sam.jpg" alt="SAMSUNG" class="rounded-img">
+                <p>Samsung, a global technology leader, entrusted us with the mission of expanding their brand presence in Odisha. 
+                    They required a marketing campaign that would effectively showcase their cutting-edge products to the local audience.
+                   
+                    Our banners not only captured attention but also played a pivotal role in elevating brand recognition and product sales in the region.</p>
+            </div>
+            <div class="portfolio-item1">
+                <h1>ITC</h1>
+                <img class="mySlides" src="itc.jpeg" style="width:100%" >
+                <img class="mySlides" src="itc2.jpeg" style="width:100%" >
+                <p>ITC, a leading conglomerate with a diverse portfolio, entrusted us with the task of enhancing their brand presence in Odisha. 
+                    They required a marketing campaign that would effectively communicate their values and product excellence to the local audience.
+                    We harnessed innovative visuals and persuasive messaging to resonate with the people of Odisha.</p>
+            </div>
+            <div class="portfolio-item">
+                <h1>Aditya Birla</h1>
+                <img src="adiita.jpeg" alt="Aditya Birla" class="rounded-img">
+                <p>At our banner marketing company, we take immense pride in our collaboration with industry leaders like Aditya Birla Group.
+                     Our journey alongside this renowned conglomerate has been a testament to our commitment to delivering impactful advertising solutions.</p>
+            </div>
+            <div class="portfolio-item">
+                <h1>AMUL</h1>
+                <img src="amul.jpeg" alt="AMUL" class="rounded-img">
+                <p>Amul, a household name in dairy products, approached us with a goal to expand their market presence in Odisha. 
+                    They needed a marketing campaign that would effectively showcase their range of dairy delights to the local audience.
+                    The results of our collaboration with Amul were exceptional. 
+                    Our banners not only captured attention but also contributed to a notable increase in brand awareness and product sales in the region.</p>
+            </div>
+            <div class="portfolio-item">
+                <h1>American Tourister</h1>
+                <img src="american.jpg" alt="Khadims" class="rounded-img">
+                <p>American Tourister, a renowned luggage and travel accessories brand, approached us with a mission to boost their brand presence in Odisha. 
+                    They needed an attention-grabbing campaign that would resonate with local audiences and promote their quality products.
+                    Recognizing the importance of location, we strategically placed these banners in front of local shops across Odisha. 
+                    This ensured maximum visibility and engagement, reaching the target audience precisely where they shop</p>
+            </div>
+            <!--<div class="portfolio-item">
+                <img src="work2.jpg" alt="Work 2">
+                <p>Description of Work 2</p>
+            </div>-->
+        </div>
+    </div>
+    </section>
+    
+    <div class="container-contact" id="contact">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <p class="address">
+                Address: <a href="https://maps.app.goo.gl/DahgAAaDxuUqCjTi8" target="_blank">Gahmadia New Colony, Near New Makkah Masjid, Cuttack, Odisha 753001</a>
+            </p>
+            <p class="phone">
+                Phone: 9040144626
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        var slideIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 4000); // Change image every 2 seconds
+    }
+    // Add a scroll event listener to trigger the animation when the element comes into view
+const elementToAnimate = document.getElementById('animate-me');
+
+window.addEventListener('scroll', () => {
+    const elementPosition = elementToAnimate.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (elementPosition < screenHeight) {
+        // Element is in the viewport
+        elementToAnimate.style.opacity = '1';
+        elementToAnimate.style.transform = 'translateY(0)';
+    }
+});
+
+    </script>
+        
+</body>
+</html>

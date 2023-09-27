@@ -1,0 +1,200 @@
+/* Add this CSS to your existing styles.css file */
+
+/* Header styles */
+header {
+    background-color: #1F2833;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Banner background image (adjust the path to your banner image) */
+header::before {
+    content: "";
+    background-image: url('banner-image.jpg'); /* Replace with the path to your banner image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7; /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
+/* Logo styles */
+header img {
+    opacity: 1; /* Keep the logo fully opaque */
+    max-width: 100px; /* Adjust the logo size as needed */
+    display: block;
+    margin: 0 auto 20px; /* Center the logo and add spacing */
+}
+
+/* Heading styles */
+header h1 {
+    margin: 0;
+    background-color:#1F2833;
+    font-size: 35px;
+    
+}
+.kms {
+    font-size: 48px;
+    color:  #C5C6C7;
+    background-color: #1F2833;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff; /* Neon glow effect */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    background-color:  #0B0C10; 
+}
+
+.container p{
+    color: #C5C6C7;
+    font-size: 20px;
+}
+.container:hover h2{
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+
+.container h1,h2{
+    font-size: 35px;
+    color: #66FCF1;
+    background-color:#1F2833;
+}
+/* Style the portfolio container */
+.portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    flex-direction: column;
+    
+
+}
+.portfolio h2{
+    background-color:#1F2833;
+}
+.portfolio:hover  h2{
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+
+.portfolio-container h1{
+    font-size: 35px;
+    color: #66FCF1;
+    text-decoration: underline;
+}
+.portfolio-container p{
+    font-size: 20px;
+    color:  #C5C6C7;
+    font-family: Didot;
+}
+/* Style each portfolio item */
+.portfolio-item {
+    flex-basis: calc(50% - 10px); /* Two items in a row */
+    margin-bottom: 70px;
+    text-align: center;
+    flex-direction: column;
+    }
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Additional styles for item descriptions if needed */
+.portfolio-item p {
+    margin-top: 10px;
+}
+.portfolio-item1 h1{
+    text-align: center;
+}
+    
+
+.container-contact{
+    background-color: #1F2833;    
+}
+.container-contact p{
+    color:  #C5C6C7;
+    font-size: 20px;
+}
+/* Style for the left button */
+.slide-in {
+    
+
+    background-color: #1F2833;
+    position: relative;
+    left: -100px; /* Initial position to the left of its container */
+    animation: slideIn 1s forwards; /* Apply the animation */
+}
+
+/* Keyframes for the slide-in animation */
+@keyframes slideIn {
+    to {
+        left: 0; /* Final position (left: 0) */
+    }
+}
+.rounded-img{
+    width: 500px;
+    height: 150px;
+}
+.rounded-img:hover{
+
+        box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff; /* Neon border glow effect */
+ /* Adjust the value to control the roundness */
+}
+
+.slide-in h1{
+    display: inline;
+   
+}
+.slide-in:hover{
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+.mySlides{
+    width:auto;
+    height: 250px;
+}
+.mySlides:hover{
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+
+.glow:hover{
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+.portfolio-animation{
+    /* Add basic styles for the animation section */
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.animation-element{
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s, transform 0.9s;
+}
